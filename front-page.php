@@ -1,10 +1,11 @@
-<?php get_header();
-
+<?php
 if ( is_user_logged_in() ) {
 
 	get_header();
 
 	/* Silence is golden */
+
+	get_footer();
 
 } else {
 
@@ -21,6 +22,6 @@ if ( is_user_logged_in() ) {
 	 * 
 	 */
 
-}
+	get_footer( "clean" );
 
-get_footer(); ?>
+} ?>
