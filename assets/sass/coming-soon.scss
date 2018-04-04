@@ -1,0 +1,28 @@
+$palettes: (
+	
+	mono: (
+		default: #000,
+		white: #FFF,
+		black: #000
+	),
+
+	yellow: (
+		default: #FAD961
+	),
+	
+	orange: (
+		default: #F76B1C
+	)
+);
+
+.yui {
+
+	.yui-gradient {
+		background-image:
+			radial-gradient(
+				circle,
+				palette( yellow ),
+				palette( orange )
+			);
+	}
+}
