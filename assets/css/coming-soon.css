@@ -1,3 +1,3 @@
-.yui .yui-gradient{background-image:radial-gradient(circle, palette(yellow), palette(orange))}
+.yui .yui-gradient{background-color:palette(orange);background-image:radial-gradient(circle, palette(yellow), palette(orange))}
 
 /*# sourceMappingURL=maps/coming-soon.css.map */
