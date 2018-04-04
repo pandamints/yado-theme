@@ -22,3 +22,7 @@
 	</head>
 
 	<body class="yui">
+
+		<div class="yui-wrap">
+
+			<div class="yui-mask yui-gradient"></div>
