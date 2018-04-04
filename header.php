@@ -22,3 +22,5 @@
 	</head>
 
 	<body <?php body_class( 'yui' ); ?>>
+
+		<header></header>
