@@ -7,8 +7,8 @@
 
 function yadoapp_css() {
 
-	wp_register_style( 'yadoapp-ui', get_template_directory_uri() . '/assets/css/front.css', false, '1.0.0' );
-	wp_register_style( 'yui-coming-soon', get_template_directory_uri() . '/assets/css/coming-soon.css', false, '1.0.0' );
+	wp_register_style( 'yadoapp-ui', get_template_directory_uri() . '/assets/css/front.css', false );
+	wp_register_style( 'yui-coming-soon', get_template_directory_uri() . '/assets/css/coming-soon.css', false );
 	
 	if ( is_user_logged_in() ) {
 
