@@ -13,10 +13,10 @@ $palettes: (
 	orange: (
 		default: #F76B1C
 	)
-) !default;
+);
 
-$coming-soon-background:	palette( orange ) !default;
-$coming-soon-gradient:		radial-gradient( circle, palette( yellow ), palette( orange ) ) !default;
+$coming-soon-background:	palette( orange );
+$coming-soon-gradient:		radial-gradient( circle, palette( yellow ), palette( orange ) );
 
 .yui {
 
