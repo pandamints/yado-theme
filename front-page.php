@@ -9,7 +9,7 @@ if ( is_user_logged_in() ) {
 
 } else {
 
-	get_header( "clean" );
+	get_header( 'clean' );
 
 	/**
 	 * 
@@ -21,7 +21,9 @@ if ( is_user_logged_in() ) {
 	 * Allow users to subscribe YADO newsletter.
 	 * 
 	 */
+	
+	get_template_part( 'template-parts/page/content', 'coming-soon' );
 
-	get_footer( "clean" );
+	get_footer( 'clean' );
 
 } ?>
