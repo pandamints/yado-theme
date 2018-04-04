@@ -2,9 +2,13 @@
 
 if ( is_user_logged_in() ) {
 
+	get_header();
+
 	/* Silence is golden */
 
 } else {
+
+	get_header( "clean" );
 
 	/**
 	 * 
