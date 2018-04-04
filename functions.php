@@ -9,7 +9,7 @@
  *
  * @package yadoapp
  * @subpackage yadoapp
- * @since yadoapp 1.0
+ * @since 1.0
  * @version 1.0
  *
  */
@@ -42,7 +42,7 @@ add_action( 'after_setup_theme', 'yadoapp_setup' );
  * Creates a nicely formatted and more specific title element text
  * for output in head of document, based on current view.
  *
- * @since yadoapp 1.0
+ * @since 1.0
  * @version 1.0
  *
  * @param string $title Default title text for current view.
@@ -74,3 +74,14 @@ function yadoapp_wp_title( $title, $sep ) {
 }
 
 add_filter( 'wp_title', 'yadoapp_wp_title', 10, 2 );
+
+/**
+ *
+ * Enqueue styles and scripts
+ *
+ * @since 1.0
+ * @version 1.0
+ *
+ */
+require( get_template_directory() . '/inc/enqueue/load-scripts.php' );
+require( get_template_directory() . '/inc/enqueue/load-styles.php' );
