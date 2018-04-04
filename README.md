@@ -1,2 +1,2 @@
 # YADO Theme
-Custom WordPress Theme for YADO website.
+Custom WordPress Theme for YADO project.
