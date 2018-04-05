@@ -1,35 +1,32 @@
-// Function for color palettes using Sass maps
-// Usage: color: palette(green,base);
-@function palette($palette, $tone: 'default') {
-	
-	@return map-get( map-get( $palettes, $palette ), $tone );
+// Modules
+@import "modules/functions";
+@import "modules/colors";
 
-}
-
-$palettes: (
-	
-	mono: (
-		default: #000,
-		white: #FFF,
-		black: #000
-	),
-
-	yellow: (
-		default: #FAD961
-	),
-	
-	orange: (
-		default: #F76B1C
-	)
-);
-
-$coming-soon-background:	palette( orange );
-$coming-soon-gradient:		radial-gradient( circle, palette( yellow ), palette( orange ) );
+// Basics
+@import "basics/reset";
 
 .yui {
+
+	.yui-wrap {
+		height: 100vh;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		padding: 20px;
+
+		@media (min-width: 720px) {
+			overflow-y: hidden;
+		}
+	}
 
 	.yui-gradient {
 		background-color: $coming-soon-background;
 		background-image: $coming-soon-gradient;
+	}
+
+	.yui-content {
+		max-width: 600px;
+		margin: 0 auto;
+		text-align: center;
 	}
 }
