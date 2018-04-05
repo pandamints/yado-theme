@@ -23,6 +23,4 @@
 
 	<body class="yui">
 
-		<div class="yui-wrap">
-
-			<div class="yui-mask yui-gradient"></div>
+		<div class="yui-wrap yui-gradient">
