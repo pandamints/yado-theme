@@ -1,0 +1,23 @@
+$palettes: (
+	
+	mono: (
+		default: #000,
+		white: #FFF,
+		black: #000
+	),
+
+	yellow: (
+		default: #FAD961
+	),
+	
+	orange: (
+		default: #F76B1C
+	)
+);
+
+// Reset
+$selection:				#D7D7D7;
+
+// Coming soon page
+$coming-soon-background:	palette( orange ) !default;
+$coming-soon-gradient:		radial-gradient( circle, palette( yellow ), palette( orange ) ) !default;
