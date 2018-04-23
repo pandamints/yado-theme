@@ -1,0 +1,27 @@
+{
+	"name": "yado-theme",
+	"version": "0.0.1",
+	"description": "YADO Theme Gulp Requirements",
+	"author": "Panda Mints",
+	"license": "GPL-3.0",
+	"homepage": "http://yadoapp.com/",
+	"repository": {
+		"type": "git",
+		"url": "git@bitbucket.org:pandamints/yado-theme.git"
+	},
+	"devDependencies": {
+		"del": "^2.2.2",
+		"gulp": "^3.9.1",
+		"gulp-autoprefixer": "^4.0.0",
+		"gulp-concat": "^2.6.1",
+		"gulp-notify": "^2.2.0",
+		"gulp-rename": "^1.2.2",
+		"gulp-replace": "^0.6.1",
+		"gulp-sass": "^3.1.0",
+		"gulp-sourcemaps": "^1.9.1",
+		"gulp-uglify": "^3.0.0",
+		"gulp-watch": "^4.3.11",
+		"gulp-wp-pot": "^2.0.3",
+		"gulp-zip": "^4.0.0"
+	}
+}

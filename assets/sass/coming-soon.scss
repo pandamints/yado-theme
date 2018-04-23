@@ -1,0 +1,62 @@
+// Modules
+@import "modules/functions";
+@import "modules/colors";
+
+// Basics
+@import "basics/reset";
+
+// Fonts
+@import url('https://fonts.googleapis.com/css?family=Caveat+Brush|Montserrat');
+
+$font:			'Montserrat', sans-serif;
+$font--alt:		'Caveat Brush', cursive;
+
+.yui {
+
+	.yui-wrap {
+		height: 100vh;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		padding: 20px;
+		background-color: #383633;
+		background-image: url('../img/coming-soon/ride-the-city.jpg');
+		background-size: cover;
+
+		@media (min-width: 720px) {
+			overflow-y: hidden;
+		}
+	}
+
+	.yui-content {
+		max-width: 600px;
+		margin: 0 auto;
+
+		h1, h2, p {
+			color: palette( mono, white );
+			text-align: center;
+		}
+
+		h1 {
+			margin-bottom: 1em;
+			font: 400 46px/58px $font--alt;
+			text-shadow: 0 1px 4px rgba(0,0,0,0.5);
+		}
+
+		h2 {
+			font: 400 20px/24px $font;
+			text-shadow: 0 1px 3px rgba(0,0,0,0.5);
+		}
+
+		p {
+			margin: 10px 0;
+			font: 400 12px/15px $font;
+			text-shadow: 0 1px 3px rgba(0,0,0,0.5);
+		}
+
+		.yui-image {
+			display: block;
+			margin: 50px auto 0;
+		}
+	}
+}
