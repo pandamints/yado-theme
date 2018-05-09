@@ -1,14 +1,14 @@
 <div class="yui-content">
 
-	<h1><?php esc_html_e( 'Prepárate para descubrir tu ciudad de una manera diferente y divertida', 'yadoapp' ); ?></h1>
+	<h1 class="yui-title"><?php esc_html_e( 'Una nueva forma de mirar el mundo. Una nueva manera de descubrir tu ciudad.', 'yadoapp' ); ?></h1>
 
-	<h2><?php esc_html_e( 'Suscríbete y sé el primero en enterarte de nuestro lanzamiento.', 'yadoapp' ); ?></h2>
+	<h2 class="yui-subtitle"><?php esc_html_e( '¿Quieres saber más? Suscríbete ahora y sé el primero en enterarte de nuestro lanzamiento.', 'yadoapp' ); ?></h2>
 
 	<?php if ( is_plugin_active( 'hustle/opt-in.php' ) ) { ?>
 
-		<p><?php echo do_shortcode( '[wd_hustle id="coming-soon" type="embedded"]' ); ?></p>
+		<?php echo do_shortcode( '[wd_hustle id="coming-soon" type="embedded"]' ); ?>
 
-		<p><?php esc_html_e( 'Creemos en la privacidad, por eso tus datos serán utilizados solo para fines informativos de YADO y algún correo ocasional. No la venderemos ni la redistribuiremos bajo ningún costo ni ningún tipo de cláusula ooculta.', 'yadoapp' ); ?></p>
+		<p><?php esc_html_e( 'En YADO creemos en la privacidad de nuestros usuarios y la respetamos, por esta razón tus datos serán utilizados únicamente con fines informativos sobre nuestra aplicación. No venderemos ni redistribuiremos tu información a terceros.', 'yadoapp' ); ?></p>
 
 	<?php } ?>
 

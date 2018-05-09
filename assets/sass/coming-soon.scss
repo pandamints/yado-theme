@@ -20,7 +20,6 @@ $font--alt:		'Caveat Brush', cursive;
 		justify-content: center;
 		padding: 20px;
 		background-color: #383633;
-		background-image: url('../img/coming-soon/ride-the-city.jpg');
 		background-size: cover;
 
 		@media (min-width: 720px) {
@@ -32,19 +31,21 @@ $font--alt:		'Caveat Brush', cursive;
 		max-width: 600px;
 		margin: 0 auto;
 
-		h1, h2, p {
+		p,
+		.yui-title,
+		.yui-subtitle {
 			color: palette( mono, white );
 			text-align: center;
 		}
 
-		h1 {
-			margin-bottom: 1em;
-			font: 400 46px/58px $font--alt;
+		.yui-title {
+			margin-bottom: 30px;
+			font: 400 38px/50px $font--alt;
 			text-shadow: 0 1px 4px rgba(0,0,0,0.5);
 		}
 
-		h2 {
-			font: 400 20px/24px $font;
+		.yui-subtitle {
+			font: 400 22px/30px $font;
 			text-shadow: 0 1px 3px rgba(0,0,0,0.5);
 		}
 
