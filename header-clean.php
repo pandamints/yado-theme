@@ -43,4 +43,4 @@
 		}
 		?>
 
-		<div class="yui-wrap" styles="background-image: url( '<?php echo esc_url( bloginfo( 'template_url' ) . '/assets/img/coming-soon/yado-' . $image . '.png' ); ?>' );">
+		<div class="yui-wrap" style="background-image: url( '<?php echo esc_url( bloginfo( 'template_url' ) . '/assets/img/coming-soon/yado-' . $image . '.png' ); ?>' );">
