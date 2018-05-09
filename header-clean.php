@@ -23,4 +23,26 @@
 
 	<body class="yui">
 
-		<div class="yui-wrap">
+		<?php
+		$random_background = 'yui-soon-' . rand( 1, 4 );
+
+		if ( 'yui-soon-1' === $random_background ) {
+			$image = 'explora';
+		}
+
+		if ( 'yui-soon-2' === $random_background ) {
+			$image = 'coffee-break';
+		}
+
+		if ( 'yui-soon-3' === $random_background ) {
+			$image = 'live';
+		}
+
+		if ( 'yui-soon-4' === $random_background ) {
+			$image = 'descubre';
+		}
+
+		$background = bloginfo( 'template_url' ) . '/assets/img/coming-soon/yado-' . $image . '.png';
+		?>
+
+		<div class="yui-wrap" styles="background-image: url( '<?php echo esc_url( $background ); ?>' );">
