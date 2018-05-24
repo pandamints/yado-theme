@@ -24,18 +24,34 @@
 	<body class="yui">
 
 		<?php
-		$random_background = 'yui-soon-' . rand( 1, 4 );
+		if ( is_page_template( 'thanks' ) ) {
+			$random_background = 'yui-thanks-' . rand( 1, 3 );
+		} else {
+			$random_background = 'yui-soon-' . rand( 1, 4 );
+		}
 
 		if ( 'yui-soon-1' === $random_background ) {
-			$image = 'explora';
+			if ( is_page_template( 'thanks' ) ) {
+				$image = 'thanks';
+			} else {
+				$image = 'explora';
+			}
 		}
 
 		if ( 'yui-soon-2' === $random_background ) {
-			$image = 'coffee-break';
+			if ( is_page_template( 'thanks' ) ) {
+				$image = 'happy';
+			} else {
+				$image = 'coffee-break';
+			}
 		}
 
 		if ( 'yui-soon-3' === $random_background ) {
-			$image = 'live';
+			if ( is_page_template( 'thanks' ) ) {
+				$image = 'fireworks';
+			} else {
+				$image = 'live';
+			}
 		}
 
 		if ( 'yui-soon-4' === $random_background ) {
