@@ -24,38 +24,38 @@
 	<body class="yui">
 
 		<?php
-		if ( is_page_template( 'thanks' ) ) {
-			$random_background = 'yui-thanks-' . rand( 1, 3 );
-		} else {
-			$random_background = 'yui-soon-' . rand( 1, 4 );
-		}
+		if ( is_page_template( 'page-thanks.php' ) ) {
+			$thanks_background = 'yui-soon-' . rand( 1, 3 );
 
-		if ( 'yui-soon-1' === $random_background ) {
-			if ( is_page_template( 'thanks' ) ) {
+			if ( 'yui-soon-1' === $thanks_background ) {
+				$image = 'fireworks';
+			}
+
+			if ( 'yui-soon-2' === $thanks_background ) {
+				$image = 'happy';
+			}
+
+			if ( 'yui-soon-3' === $thanks_background ) {
 				$image = 'thanks';
-			} else {
+			}
+		} else {
+			$soon_background = 'yui-soon-' . rand( 1, 4 );
+
+			if ( 'yui-soon-1' === $soon_background ) {
 				$image = 'explora';
 			}
-		}
 
-		if ( 'yui-soon-2' === $random_background ) {
-			if ( is_page_template( 'thanks' ) ) {
-				$image = 'happy';
-			} else {
+			if ( 'yui-soon-2' === $soon_background ) {
 				$image = 'coffee-break';
 			}
-		}
 
-		if ( 'yui-soon-3' === $random_background ) {
-			if ( is_page_template( 'thanks' ) ) {
-				$image = 'fireworks';
-			} else {
+			if ( 'yui-soon-3' === $soon_background ) {
 				$image = 'live';
 			}
-		}
 
-		if ( 'yui-soon-4' === $random_background ) {
-			$image = 'descubre';
+			if ( 'yui-soon-4' === $soon_background ) {
+				$image = 'descubre';
+			}
 		}
 		?>
 
